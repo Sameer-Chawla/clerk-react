@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Align items horizontally */
+    gap: 1rem; /* Add space between items */
+    font-size: 1rem; /* Set font size */
+    font-weight: 500; /* Set font weight */
+  }
+  
+  ul li {
+    padding: 0.5rem 1.5rem; /* Add padding to list items */
+    background-color: #f3f4f6; /* Set a light background color */
+    border-radius: 0.375rem; /* Round the corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Add subtle shadow */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  ul li:hover {
+    background-color: #e5e7eb; /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #1f2937; /* Set text color to a dark gray */
+    display: block; /* Make the link fill the list item */
+  }
+  
+  ul li a:hover {
+    color: #2563eb; /* Change link color on hover to blue */
+  }
