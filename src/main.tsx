@@ -2,18 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { ClerkProvider } from '@clerk/clerk-react'
 
-// Import the layouts
+
 import RootLayout from './routes/layouts/root-layout'
 import DashboardLayout from './routes/layouts/dashboard-layout'
 
-// Ensure RootLayout is set up to accept children
-// Example: 
-// const RootLayout = ({ children }: { children: React.ReactNode }) => (
-//   <div>{children}</div>
-// );
 
-// Import the components
 import IndexPage from './routes/index'
 import ContactPage from './routes/contacts'
 import SignInPage from './routes/sign-in'
