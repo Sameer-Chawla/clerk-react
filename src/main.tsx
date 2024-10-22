@@ -7,6 +7,12 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import RootLayout from './routes/layouts/root-layout'
 import DashboardLayout from './routes/layouts/dashboard-layout'
 
+// Ensure RootLayout is set up to accept children
+// Example: 
+// const RootLayout = ({ children }: { children: React.ReactNode }) => (
+//   <div>{children}</div>
+// );
+
 // Import the components
 import IndexPage from './routes/index'
 import ContactPage from './routes/contacts'
@@ -17,7 +23,7 @@ import InvoicesPage from './routes/dashboard.invoices'
 
 const router = createBrowserRouter([
   {
-    element: <RootLayout />,
+    element: <RootLayout children={undefined} />,
     children: [
       { path: '/', element: <IndexPage /> },
       { path: '/contact', element: <ContactPage /> },
